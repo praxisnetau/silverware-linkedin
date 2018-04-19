@@ -1,0 +1,40 @@
+---
+Name: silverware-linkedin
+---
+
+# Configure Content Controller:
+
+SilverStripe\CMS\Controllers\ContentController:
+  required_js:
+    - "silverware/linkedin: client/dist/js/bundle.js"
+
+# Configure Site Configuration:
+
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - SilverWare\LinkedIn\Extensions\LinkedInConfig
+  linkedin_languages:
+    en_US: English
+    ar_AE: Arabic
+    zh_CN: Chinese - Simplified
+    zh_TW: Chinese - Traditional
+    cs_CZ: Czech
+    da_DK: Danish
+    nl_NL: Dutch
+    fr_FR: French
+    de_DE: German
+    in_ID: Indonesian
+    it_IT: Italian
+    ja_JP: Japanese
+    ko_KR: Korean
+    ms_MY: Malay
+    no_NO: Norwegian
+    pl_PL: Polish
+    pt_BR: Portuguese
+    ro_RO: Romanian
+    ru_RU: Russian
+    es_ES: Spanish
+    sv_SE: Swedish
+    tl_PH: Tagalog
+    th_TH: Thai
+    tr_TR: Turkish
